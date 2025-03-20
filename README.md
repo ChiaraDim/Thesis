@@ -1,4 +1,4 @@
-# Process ROC - Rate of Change Analysis for Process Mining
+# Rate of Change Analysis for Process Mining
 
 Chiara Di Marco Luketich (Universidad ORT, Uruguay)
 
