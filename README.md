@@ -1,6 +1,16 @@
 # Rate of Change Analysis for Process Mining
 
-Chiara Di Marco Luketich (Universidad ORT, Uruguay)
+This project was developed as the final thesis for the Systems Engineering degree at Universidad ORT Uruguay.
+
+Its main objective is to explore the applicability of the Rate of Change (ROC), traditionally used in disciplines such as finance and physics, to the analysis of business processes through Process Mining techniques. As a result, a Python library was developed to calculate the ROC on event logs, providing new insights for detecting trends and anomalies in process behavior.
+
+This repository contains the project deliverables, including the developed tool and examples demonstrating its application on case studies.
+
+## Author
+Chiara Di Marco Luketich
+
+## Thesis Supervisor
+Dr. Ing. Daniel Calegari
 
 ## Project structure
 
