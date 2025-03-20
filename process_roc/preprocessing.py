@@ -13,6 +13,7 @@ def prepare_data(log_file: str, case_id_column: str) -> DataFrame:
     Returns:
         DataFrame: Processed log dataframe with additional time features and frequency.
     """
+    
     df = pd.read_csv(log_file)
 
     required_columns = [col for col in df.columns if 'case' in col.lower() or 'time' in col.lower()]
