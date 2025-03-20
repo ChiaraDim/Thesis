@@ -16,6 +16,10 @@ def scenario_1(log_file, case_id_column, delta_y, delta_x):
     plot_traces(all_traces_roc, x_col=delta_x, y_col='ROC', 
                 case_id_column=case_id_column, 
                 title=f"ROC over {delta_x} for all Cases", y_axis_title="ROC")
+    
+    plot_traces(all_traces_roc, x_col=delta_x, y_col=delta_y, 
+                case_id_column=case_id_column, 
+                title=f"Velocity over {delta_x} for all Cases", y_axis_title="Velocity")
 
 def scenario_2(log_file, case_id_column, delta_y, delta_x, selected_cases):
     """
@@ -34,6 +38,10 @@ def scenario_2(log_file, case_id_column, delta_y, delta_x, selected_cases):
                 case_id_column=case_id_column,
                 title=f"ROC over {delta_x} for Selected Cases: {', '.join(selected_cases)}",
                 y_axis_title="ROC")
+    
+    plot_traces(selected_traces_roc, x_col=delta_x, y_col=delta_y, 
+                case_id_column=case_id_column, 
+                title=f"Velocity over {delta_x} for Selected Cases", y_axis_title="Velocity")
 
 def scenario_3(log_file, case_id_column, delta_y, delta_x, case_id):
     """
@@ -50,4 +58,8 @@ def scenario_3(log_file, case_id_column, delta_y, delta_x, case_id):
 
     plot_traces(single_trace_roc, x_col=delta_x, y_col='ROC',
                 case_id_column=case_id_column,
-                title=f"ROC over Rounded Time for Case {case_id}", y_axis_title="ROC")
+                title=f"ROC over {delta_x} for Case {case_id}", y_axis_title="ROC")
+
+    plot_traces(single_trace_roc, x_col=delta_x, y_col=delta_y, 
+                case_id_column=case_id_column, 
+                title=f"Velocity over {delta_x} for Case {case_id}", y_axis_title="Velocity")
